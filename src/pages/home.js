@@ -37,16 +37,12 @@ const AddClientInfo = () => {
      
     function onSubmit(e) {
         e.preventDefault()
-        
-        firestore
-            .collection('client')
-            .add({
+        firestore.collection('client').add({
                 client,
                 table: parseInt(table),
                 pedidos,
                
-            })
-            .then(()=>{
+            }).then(()=>{
                setTable('')
                setClient('')
                setPedidos([])
@@ -61,35 +57,30 @@ const AddClientInfo = () => {
 
     return (
         <>
-            <Header/>
+         <Header/>
+           
+          <div className='menu'>
+
+            {itens1.map((Breakfast) => <Card handleClick={() => 
+            resumo(Breakfast)} key={Breakfast.id} text={Breakfast.name} price={Breakfast.price}/>)}
+                
+            {itens2.map((Lunch) => <Card handleClick={() => resumo(Lunch)} key={Lunch.id} text={Lunch.name} price={Lunch.price} />)}
+                
+            {pedidos.map(product => <div key={product.id}> {product.name} {product.price}</div>)}
+         </div>
             <div>
-                <div className='menu'>
-
-                    {itens1.map((Breakfast) => <Card handleClick={() => 
-                        resumo(Breakfast)} key={Breakfast.id} text={Breakfast.name} price={Breakfast.price}/>)}
-                
-                    {itens2.map((Lunch) => <Card handleClick={() => resumo(Lunch)} key={Lunch.id} text={Lunch.name} price={Lunch.price} />)}
-                
-                    {pedidos.map(product => <div key={product.id}> {product.name} {product.price}</div>)}
-                    <label>
-                        <strong>cliente</strong>
-                    </label>
-                    <Input id='input-number' type="text" state={client} handleChange={e => setClient(e.currentTarget.value)}/>
-                    <label>
-                    <strong>mesa</strong>
-                    </label>
-                    <Input id='input-number' type="number" state={table} handleChange={e => setTable(e.currentTarget.value)}/>
-                    <Button id='btn-enviar' handleClick={onSubmit} text={"ENVIAR"}/>
-                    
-                </div>
-            </div>
-            
+               <label>
+                 <h5>CLIENTE</h5>
+                 </label>
+                 <Input id='input-number' type="text" state={client} handleChange={e => setClient(e.currentTarget.value)}/>
+                 <label>
+                 <h5>MESA</h5>
+                 </label>
+                 <Input id='input-number' type="number" state={table} handleChange={e => setTable(e.currentTarget.value)}/>
+                 <Button id='btn-enviar' handleClick={onSubmit} text={'ENVIAR'}/>
+                </div>  
         </>
-    );
-    
-
- 
+    ); 
 };
-
 
 export default AddClientInfo;
