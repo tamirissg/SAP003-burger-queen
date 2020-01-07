@@ -1,7 +1,8 @@
-#input-number{
-    background-color:black;
+.input{
     border-radius: 5px;
     color: white;
-    width: 150px;
-    height: 20px;
+    width:250px;
+    height:20px;
+
 }
+

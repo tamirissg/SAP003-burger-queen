@@ -2,7 +2,7 @@ import firebase from 'firebase';
 import 'firebase/firestore';
 
 
-const firebaseConfig = {
+const config = {
     apiKey: "AIzaSyAlnkIwnjAbYSaWlWLSzyX4aVlclLJUpMk",
     authDomain: "sap003-burger-queen-e72a4.firebaseapp.com",
     databaseURL: "https://sap003-burger-queen-e72a4.firebaseio.com",
@@ -12,7 +12,6 @@ const firebaseConfig = {
     appId: "1:224992073109:web:c77ff8962383c4a2b9529c"
   };
 
-  const firebaseApp = firebase.initializeApp(firebaseConfig);
-  const firestore = firebaseApp.firestore();
-  
-  export default firestore
+  firebase.initializeApp(config);
+
+  export default firebase;
