@@ -1,13 +1,26 @@
 import React from 'react';
-import AddClientInfo from './pages/home.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} 
+from "react-router-dom";
+import './componentes/Card/style.css'
+import Kitchen from './pages/kitchen.js'
+import Service from './pages/service.js'
+
 
 
 function App() {
   return (
-    <div className="App">
-      <AddClientInfo />
-      <header/>
+  <Router>
+    <div>
+      <Switch>
+        <Route path="/service" component={Service} />
+        <Route path="/kitchen" component={Kitchen} />
+      </Switch>
     </div>
+  </Router>
   );
 }
 
