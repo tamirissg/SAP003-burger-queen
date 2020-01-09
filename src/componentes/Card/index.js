@@ -5,7 +5,9 @@ const Card = (props) =>{
         <div placeholder={props.placeholder} value={props.state} id={props.id}
              onClick={props.handleClick} className="card">
             <p>{props.name} </p>
-            R$ {props.price},00</div>
+            <p>{props.price}</p>
+            <img src={props.image} className="image" />
+        </div>
     );
 } 
 
