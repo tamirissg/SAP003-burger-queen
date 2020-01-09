@@ -3,6 +3,14 @@
     color: white;
     width:250px;
     height:20px;
+    text-align: center;
 
 }
 
+#input-number{
+    color: black;
+}
+
+#input-text{
+    color: black;
+}

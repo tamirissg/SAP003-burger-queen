@@ -63,38 +63,54 @@ const Menu = () => {
     }
   }
 
+  const removeItem =(item) => {
+    if(item.count === 1){
+      const removeItens = order.filter(product => {
+        return product !== item
+      })
+      setOrder([...removeItens])
+    }else{
+      item.count --;
+      setOrder([...order])
+    }
+  }
+
   const deleteItem = (item) => {
     const remove = (order.indexOf(item))
     order.splice(remove, 1);
     setOrder([...order]);
   }
 
+
   const totalDeItens = order.reduce((acc, item) => acc + (item.count * item.price), 0)
-  // 
+
 
   return (
     <>
       <Nav/>
       <section>
-      <div className='menu.item1'>
+      <div className='menu-item1'>
         <p>Menu de Café da manhã </p>
-        {item1.map((Breakfast) => <Card handleClick={() => addItem(Breakfast)} key={Breakfast.id} name={Breakfast.name} price={Breakfast.price} />)}
+        {item1.map((Breakfast) => <Card handleClick={() => addItem(Breakfast)} key={Breakfast.id} type={Breakfast.type} name={Breakfast.name} image={Breakfast.image} price={Breakfast.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} />)}
         </div>
         </section> 
         <section>
-        <div className ="menu.item2">
+        <div className ="menu-item2">
         <p>Menu</p>
-        {item2.map((Lunch) => <Card handleClick={() => addItem(Lunch)} key={Lunch.id} name={Lunch.name} price={Lunch.price} />)}
+        {item2.map((Lunch) => <Card handleClick={() => addItem(Lunch)}  key={Lunch.id} type={Lunch.type} name={Lunch.name} image={Lunch.image} price={Lunch.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} />)}
         </div>
         </section>
-     
-      <section>
-        {order.map((product, index) => <div key={product.id+index}> {product.name} {product.price}
+        <section>
+  {order.map((product, index) => <div key={product.id+index}> {product.name} {product.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} /{product.count}
         <Button id='button-delete' handleClick={(e) => {
           e.preventDefault()
           deleteItem(product);
-        }} text={'deletar'} /></div>)}
-        <p>Total de Itens {totalDeItens}</p>
+        }} text={'deletar'} />
+        <Button id ='button-sub' handleClick = {() => removeItem(product)} text={'-'}/>
+        <Button id = 'button-add' handleClick ={() => addItem(product)} text={'+'}/>
+        
+        </div>)}
+        <p>Total = {totalDeItens.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</p>
         <p>Pedidos</p>
           <strong>Cliente</strong>
         <Input id='input-text' type='text' state={client} handleChange={e => setClient(e.currentTarget.value)} />

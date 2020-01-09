@@ -1,17 +1,26 @@
-.card {
-    
-    height: 100px;
-    width: 250px;
+
+/* *{
+    padding:0%;
+    margin: auto;
+  } */
+
+.card {  
     padding: 10px;
-    border: 0;
-    background: rgb(43, 36, 48);
-    color:#fff;
+    width: 180px;
+  
+    border: 20px;
+    color:rgb(32, 29, 29);
     font-size: 16px;
     justify-content: center;
-    float: left;
+    display: inline-block;
     margin-top: 20px;
-    margin-left: 20px;
-    box-shadow: -8px 9px 15px #e6f593;    
+    margin-right: 20px;
+    box-shadow: -8px 9px 15px #faf600;    
   
+}
+
+.image{
+    width: 120px;
+    
 }
 
