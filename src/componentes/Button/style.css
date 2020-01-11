@@ -1,10 +1,13 @@
-.button {
+button {
     height: 30px;
     width: 100px;
     border-radius: 3px;
     background-color: #f5bc00;
     border: none;
-    color: rgb(37, 22, 2);
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(58, 33, 2);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+   
 }
+
 

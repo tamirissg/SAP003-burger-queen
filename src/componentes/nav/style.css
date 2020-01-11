@@ -1,21 +1,23 @@
-
+ *{
+   padding: 0%;
+   margin: auto;
+ }
  .nav {
-  clear:both;
-  overflow:auto;
+ 
   background: #f5bc00;
   align-items: center;
   box-shadow: -12px 9px 47px #e8f571; 
   display:flex;
   font-size: 18px;
   font-weight: bold;
+  height: 150px;
  
 }
 
 
 .logo img {
-    height: 150px;
+    height: 145px;
     align-items: center;
-    margin-right: 800px;
     display: block;
     float:left;
  
@@ -25,10 +27,10 @@
 ul li {
   display: inline-block; 
   padding:10px;
-  font-size:25px; 
+  font-size:30px; 
   text-decoration-color: brown;
   font-weight: bold;
-  font-family: fantasy;
+  font-family: 'Barlow Condensed', sans-serif;
   color:brown;
   
 }
@@ -37,7 +39,7 @@ ul li {
   text-decoration-color: brown;
   font-weight: bold;
   color:brown;
-  font-family: cursive;
+  font-family: 'Barlow Condensed', sans-serif;
   text-decoration: none;
 
 }

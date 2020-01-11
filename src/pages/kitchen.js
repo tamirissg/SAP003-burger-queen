@@ -1,8 +1,16 @@
 import React from 'react';
+import Request from '../componentes/Request/index.js'
+
+
+
+
 
 function Kitchen () {
     return (
-        <div> vaiiiii </div>
+        <div> 
+            <Request/>
+
+        </div>
     )
 }
 
