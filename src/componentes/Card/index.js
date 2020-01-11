@@ -6,7 +6,7 @@ const Card = (props) =>{
              onClick={props.handleClick} className="card">
             <p>{props.name} </p>
             <p>{props.price}</p>
-            <img src={props.image} className="image" />
+            <img src={props.image} className="image"/>
         </div>
     );
 } 

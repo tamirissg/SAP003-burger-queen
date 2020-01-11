@@ -1,16 +1,21 @@
 .input{
-    border-radius: 5px;
     color: white;
-    width:250px;
+    width:100px;
     height:20px;
     text-align: center;
+
+    
 
 }
 
 #input-number{
     color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
 }
 
 #input-text{
     color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
 }
