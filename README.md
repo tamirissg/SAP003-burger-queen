@@ -3,7 +3,9 @@
 ## Índice
 
 * [1. Projeto](#2-projeto)
-* [2. Funcionalidades](#2Funcionalidades)
+
+* [2. Funcionalidades](#2-funcionalidades)
+
 
 
 ***
