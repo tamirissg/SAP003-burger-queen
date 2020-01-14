@@ -10,6 +10,7 @@ import '../Menu/style.css'
 import '../Input/style.css'
 
 
+
 const Menu = () => {
   const [client, setClient] = useState('');
   const [table, setTable] = useState('');
@@ -100,7 +101,7 @@ const Menu = () => {
 
   return (
     <>
-      
+     
       <section className="menu">
       <h3>Menu de Café da manhã </h3>
       <div className= "menu-item1">
@@ -110,7 +111,7 @@ const Menu = () => {
          type={Breakfast.type} 
          name={Breakfast.name} 
          image={Breakfast.image} 
-        price={Breakfast.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} />)}
+         price={Breakfast.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} />)}
         </div>
         <h3>Menu da Tarde</h3>
         <div className ="menu-item2">
@@ -121,7 +122,7 @@ const Menu = () => {
           type={Lunch.type} 
           name={Lunch.name} 
           image={Lunch.image} 
-        price={Lunch.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} />)}
+          price={Lunch.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} />)}
         </div>
       </section>
       <section className="order">

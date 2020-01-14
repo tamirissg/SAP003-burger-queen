@@ -7,10 +7,9 @@ import {
 }
 from "react-router-dom";
 import './componentes/Card/style.css'
-import Kitchen from './pages/kitchen.js'
 import Service from './pages/service.js'
 import Nav from './componentes/nav/index.js'
-// import Home from './pages/home/home.js'
+import './componentes/nav/style.css'
 
 
 
@@ -20,9 +19,8 @@ function App() {
     <div>
       <Nav/>
       <Switch>
-        {/* <Route path="/" component={Home}/> */}
-        <Route path="/service" component={Service} />
-        <Route path="/kitchen" component={Kitchen} />
+        <Route path="/" component={Service} />
+       
       </Switch>
     </div>
   </Router>

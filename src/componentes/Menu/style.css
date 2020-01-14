@@ -8,11 +8,10 @@
     flex-direction: column;
     font-size: 25px;
     color: black;
-    font-family: 'Barlow Condensed', sans-serif;
-    margin-top: 30px;
-
-    
+    font-family: 'Barlow Condensed', sans-serif;   
 }
+
+
 
 
 .menu-item2{
@@ -51,3 +50,7 @@ h3{
 .mesa{
     font-family: 'Barlow Condensed', sans-serif;
 }
+
+
+
+
