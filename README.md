@@ -3,7 +3,7 @@
 ## Índice
 
 * [1. Projeto](#2-projeto)
-* [2. Processo de design](#2-processo-de-design)
+* [2. Funcionalidades](#2-funcionalidades)
 
 
 ***

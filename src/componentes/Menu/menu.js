@@ -100,29 +100,33 @@ const Menu = () => {
 
 
   return (
-    <>
+    <div>
      
       <section className="menu">
-      <h3>Menu de Café da manhã </h3>
-      <div className= "menu-item1">
-        {item1.map((Breakfast) => 
-        <Card handleClick={() => 
-         verifyOptions(Breakfast)} key={Breakfast.id} 
-         type={Breakfast.type} 
-         name={Breakfast.name} 
-         image={Breakfast.image} 
-         price={Breakfast.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} />)}
+        <div>
+          <h3>Menu de Café da manhã </h3>
+          <div className="menu-item">
+            {item1.map((Breakfast) => 
+            <Card handleClick={() => 
+              verifyOptions(Breakfast)} key={Breakfast.id} 
+              type={Breakfast.type} 
+              name={Breakfast.name} 
+              image={Breakfast.image} 
+              price={Breakfast.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} />)}
+          </div>
         </div>
-        <h3>Menu da Tarde</h3>
-        <div className ="menu-item2">
-        {item2.map((Lunch) => 
-        <Card handleClick={() => 
-          verifyOptions(Lunch)}  
-          key={Lunch.id} 
-          type={Lunch.type} 
-          name={Lunch.name} 
-          image={Lunch.image} 
-          price={Lunch.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} />)}
+        <div>
+          <h3>Menu da Tarde</h3>
+          <div className ="menu-item">
+            {item2.map((Lunch) => 
+              <Card handleClick={() => 
+                verifyOptions(Lunch)}  
+                key={Lunch.id} 
+                type={Lunch.type} 
+                name={Lunch.name} 
+                image={Lunch.image} 
+                price={Lunch.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} />)}
+          </div>
         </div>
       </section>
       <section className="order">
@@ -176,7 +180,7 @@ const Menu = () => {
         
        
         
-    </>
+    </div>
   );
 };
 
