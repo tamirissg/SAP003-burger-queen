@@ -80,7 +80,7 @@ produto e poder enviar o pedido para a cozinha para ser preparado.
 
 ***
 
-Para acessar  [nesse link](https://rede-social-lab-2e315.firebaseapp.com).
+Para acessar  [nesse link](https://sap003-burger-queen-e72a4.firebaseapp.com).
 
 Para rodar essa aplicação, você precisará instalar [npm](https://www.npmjs.com/).
 Uma vez com o npm instalado e o repositório clonado, acesse a página do repositório e digite o seguinte comando para instalar as dependências desse projeto:
