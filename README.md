@@ -65,7 +65,9 @@ adicionar e a interface deve mostrar o _resumo do pedido_ com o custo total.
  
 ## 2. Funcionalidades
 
-#### [História de usuário] Garçom/Garçonete deve poder anotar o seu pedido
+#### [História de usuário] Garçom/Garçonete deve poder anotar o seu pedido 
+
+![imagem](burguerQueen.jpg)
 
 Eu como garçom/garçonete quero poder anotar o meu pedido saber o valor de cada 
 produto e poder enviar o pedido para a cozinha para ser preparado.

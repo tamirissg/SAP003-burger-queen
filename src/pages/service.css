@@ -20,16 +20,6 @@
 
 
 
-/* 
-.menu-item2{
-    
-    display: inline-block;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 119px;
-   
-} */
-
 .order{
     color: #65382e;
     text-align: center;
@@ -37,6 +27,7 @@
     font-size: 25px;
     margin: 40px;
     font-family: 'Barlow Condensed', sans-serif;
+    min-width: 40%;
     
 }
 
@@ -62,7 +53,10 @@ h3{
     padding: 10px;
 }
 
-
+.container {
+    flex-direction: row;
+    display: flex;
+}
 
 
 
