@@ -1,12 +1,13 @@
 
 .card {  
     float: left; 
-    height:180px;
-    width: 250px;
+    height:160px;
+    width: 230px;
     padding: 5px;
     margin: 8px;   
     box-shadow: -3px 5px 9px rgb(145, 143, 73);
     align-items: center;
+    border-radius: 5px;
   
 } 
 
