@@ -9,6 +9,7 @@ import '../componentes/Card/style.css';
 import '../componentes/Input/style.css'
 import '../pages/service.css'
 import '../componentes/Button/style.css'
+import Nav from '../componentes/nav/index.js'
 
 
 
@@ -89,9 +90,12 @@ const Menu = () => {
 
 
   return (
+
+   <>
+   <Nav/>
     <div className="container">
-     
       <section className="menu">
+      
         <MenuList title="Menu de Café da manhã" list={breakfast} addItem={addItem} setModal={setModal}/>
         <MenuList title="Menu da Tarde" list={lunch} addItem={addItem} setModal={setModal}/>
       </section>
@@ -150,6 +154,7 @@ const Menu = () => {
        
         
     </div>
+    </>
   );
 };
 
@@ -177,7 +182,9 @@ function MenuList(props) {
           price={item.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} />)}
     </div>
   </div>
+  
   )
+
 } 
 
 

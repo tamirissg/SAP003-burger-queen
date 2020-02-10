@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import firebase from '../utils/firebase';
 import '../pages/kitchen.css'
+import Nav from '../componentes/nav';
 
 
 
@@ -27,6 +28,8 @@ const Request = () => {
 
     return (
         <>
+        <Nav/>
+        
             <div>
                 {order.map(doc =>
                     <div className="cards">
