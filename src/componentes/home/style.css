@@ -1,0 +1,36 @@
+ul li {
+    display: inline-block;
+    /* padding:15px; */
+  
+    
+}
+  
+.link-home {
+   
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 50px;
+    color:brown;
+    float: left;
+}
+
+.links {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.home {
+   
+    background: #f5bc00;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+  
+.link-home:hover {
+    color:white;
+}

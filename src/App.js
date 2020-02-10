@@ -9,18 +9,20 @@ from "react-router-dom";
 import './componentes/Card/style.css'
 import Service from './pages/service.js'
 import kitchen from './pages/kitchen.js'
-import Nav from './componentes/nav/index.js'
+import Home from './componentes/home/home.js'
+import './componentes/home/style.css'
 import './componentes/nav/style.css'
+
 
 
 
 function App() {
   return (
   <Router>
-      <Nav/>
       <Switch>
-        <Route path="/service" component={Service} />
-        <Route path="/kitchen" component={kitchen}/> 
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/service" component={Service} />
+        <Route exact path="/kitchen" component={kitchen}/> 
       </Switch>
   </Router>
   );
